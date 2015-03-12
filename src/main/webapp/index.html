@@ -8,11 +8,13 @@
     <div id="result">Loading...</div>
 
     <script>
-$(document).ready(function() {
-  $.getJSON('/demo', function(data) {
-    $('#result').html("Hello, " + data.name);
-  });
-});
+      $(document).ready(function() {
+        $.getJSON('/demo', function(data) {
+           $('#result').html("<a id='link'></a>");
+           $('#link').attr("href", data.link);
+           $('#link').html(data.name);
+        });
+      });
     </script>
   </body>
 </html>
