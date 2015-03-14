@@ -958,6 +958,7 @@ a:hover {
 .pricing-content {
   padding: 0 15px;
   margin-bottom: 24px;
+  height: 400px;
 }
 .pricing-content .list-unstyled {
   text-align: left;
